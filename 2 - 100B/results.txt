@@ -1,0 +1,146 @@
+# Read speeds:
+-- Host
+4.3 MB/s
+4.1 MB/s
+3.3 MB/s
+4.7 MB/s
+3.3 MB/s
+4.1 MB/s
+4.5 MB/s
+4.5 MB/s
+3.3 MB/s
+4.6 MB/s
+AVG = 4.07 MB/s
+-- Volume
+12.6 MB/s
+17.2 MB/s
+13.0 MB/s
+13.9 MB/s
+15.5 MB/s
+14.3 MB/s
+16.3 MB/s
+15.4 MB/s
+18.3 MB/s
+14.1 MB/s
+AVG = 15.06 MB/s
+-- Bind
+411 MB/s
+413 MB/s
+408 MB/s
+409 MB/s
+415 MB/s
+410 MB/s
+403 MB/s
+412 MB/s
+406 MB/s
+410 MB/s
+AVG = 409.70 MB/s
+-- Low layer
+11.3 MB/s
+10.5 MB/s
+11.3 MB/s
+14.5 MB/s
+15.1 MB/s
+10.6 MB/s
+10.4 MB/s
+13.4 MB/s
+12.8 MB/s
+14.7 MB/s
+AVG = 12.46 MB/s
+-- High layer
+15.2 MB/s
+13.5 MB/s
+10.5 MB/s
+17.8 MB/s
+11.8 MB/s
+13.6 MB/s
+13.1 MB/s
+10.5 MB/s
+10.5 MB/s
+11.4 MB/s
+AVG = 12.79 MB/s
+# Write speeds:
+-- Host
+16.5 kB/s
+29.8 kB/s
+20.3 kB/s
+25.8 kB/s
+14.3 kB/s
+23.9 kB/s
+33.9 kB/s
+18.7 kB/s
+35.1 kB/s
+33.5 kB/s
+AVG = 25.18 kB/s
+-- Volume
+210 kB/s
+212 kB/s
+204 kB/s
+339 kB/s
+216 kB/s
+215 kB/s
+237 kB/s
+237 kB/s
+263 kB/s
+233 kB/s
+AVG = 236.60 kB/s
+-- Bind
+32.0 kB/s
+19.3 kB/s
+24.0 kB/s
+30.2 kB/s
+22.8 kB/s
+30.7 kB/s
+23.0 kB/s
+32.1 kB/s
+32.5 kB/s
+27.8 kB/s
+AVG = 27.44 kB/s
+-- Low layer (preexisting file)
+186 kB/s
+226 kB/s
+159 kB/s
+189 kB/s
+223 kB/s
+282 kB/s
+214 kB/s
+176 kB/s
+152 kB/s
+148 kB/s
+AVG = 195.50 kB/s
+-- High layer (preexisting file)
+232 kB/s
+193 kB/s
+154 kB/s
+191 kB/s
+175 kB/s
+188 kB/s
+223 kB/s
+175 kB/s
+196 kB/s
+209 kB/s
+AVG = 193.60 kB/s
+-- Low layer (new file)
+205 kB/s
+241 kB/s
+268 kB/s
+312 kB/s
+277 kB/s
+226 kB/s
+312 kB/s
+161 kB/s
+213 kB/s
+260 kB/s
+AVG = 247.50 kB/s
+-- High layer (new file)
+231 kB/s
+193 kB/s
+247 kB/s
+268 kB/s
+246 kB/s
+249 kB/s
+188 kB/s
+215 kB/s
+275 kB/s
+270 kB/s
+AVG = 238.20 kB/s

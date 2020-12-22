@@ -1,0 +1,17 @@
+FROM ubuntu:latest as layer0
+RUN mkdir -p /layers/0
+COPY data /layers/0
+
+FROM layer0 as layers
+RUN mkdir -p /layers/1
+RUN mkdir -p /layers/2
+RUN mkdir -p /layers/3
+RUN mkdir -p /layers/4
+RUN mkdir -p /layers/5
+RUN mkdir -p /layers/6
+RUN mkdir -p /layers/7
+RUN mkdir -p /layers/8
+RUN mkdir -p /layers/9
+
+FROM layers 
+COPY data /layers/9
