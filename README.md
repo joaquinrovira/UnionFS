@@ -33,12 +33,12 @@ Una vez contruidas las imágenes procedemos a ejecutar el fichero `test.sh` que 
 
 Usando la herramienta [`dive`](https://www.github.com/wagoodman/dive) podemos visualizar las capas de la imagen construida:
 
-<img src="0 - Layers View/0.0.png" width=200/>
-<img src="0 - Layers View/0.1.png" width=200/>
-<img src="0 - Layers View/1.png" width=200/>
-<img src="0 - Layers View/2.png" width=200/>
-<img src="0 - Layers View/9.0.png" width=200/>
-<img src="0 - Layers View/9.1.png" width=200/>
+<img src="0 - Layers View/0.0.png" width=400/>
+<img src="0 - Layers View/0.1.png" width=400/>
+<img src="0 - Layers View/1.png" width=400/>
+<img src="0 - Layers View/2.png" width=400/>
+<img src="0 - Layers View/9.0.png" width=400/>
+<img src="0 - Layers View/9.1.png" width=400/>
 
 ## Ejecución
 ### I/O de fichero grande (100MB)
