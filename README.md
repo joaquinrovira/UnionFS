@@ -31,7 +31,7 @@ Para cada experimento, primero construiremos las imagen docker sobre las que lo 
 
 Una vez contruidas las imágenes procedemos a ejecutar el fichero `test.sh` que se encarga de ejecutar el experimento. Usaremos la herramienta `dd` para medir la velocidad de I/O y guardaremos los resultados en un fichero `results.txt`.
 
-Usando la herramienta [`dive`](https://www.github.com/wagoodman/dive) podemos visualizar las capas de la imagen contruida:
+Usando la herramienta [`dive`](https://www.github.com/wagoodman/dive) podemos visualizar las capas de la imagen construida:
 
 <img src="0 - Layers View/0.0.png" width=200/>
 <img src="0 - Layers View/0.1.png" width=200/>
