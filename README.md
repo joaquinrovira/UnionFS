@@ -31,6 +31,15 @@ Para cada experimento, primero construiremos las imagen docker sobre las que lo 
 
 Una vez contruidas las imágenes procedemos a ejecutar el fichero `test.sh` que se encarga de ejecutar el experimento. Usaremos la herramienta `dd` para medir la velocidad de I/O y guardaremos los resultados en un fichero `results.txt`.
 
+Usando la herramienta [`dive`](https://www.github.com/wagoodman/dive) podemos visualizar las capas de la imagen contruida:
+
+<img src="0 - Layers View/0.0.png" width=200/>
+<img src="0 - Layers View/0.1.png" width=200/>
+<img src="0 - Layers View/1.png" width=200/>
+<img src="0 - Layers View/2.png" width=200/>
+<img src="0 - Layers View/9.0.png" width=200/>
+<img src="0 - Layers View/9.1.png" width=200/>
+
 ## Ejecución
 ### I/O de fichero grande (100MB)
 
@@ -45,9 +54,9 @@ Analizaremos 5 situaciones diferentes:
 - Velocidad en una capa alta (*high layer*). La capa alta se refiere a la capa de lectura just debajo de la capa de entrada-salida del contenedor (`/layers/9`).
 - Velocidad en una capa baja (*low layer*). La capa baja se refiere a una de las primeras capas creadas al contruir la imagen (`/layers/0`).
 
-<img src="1 - 100MB/plot/write_speed/plot0.png" width=300/>
-<img src="1 - 100MB/plot/overwrite_speed/plot0.png" width=300/>
-<img src="1 - 100MB/plot/read_speed/plot0.png" width=300/>
+<img src="1 - 100MB/plot/write_speed/plot0.png" width=500/>
+<img src="1 - 100MB/plot/overwrite_speed/plot0.png" width=500/>
+<img src="1 - 100MB/plot/read_speed/plot0.png" width=500/>
 
 ### I/O de fichero pequeño (100B)
 
@@ -56,9 +65,9 @@ Analizaremos 5 situaciones diferentes:
 El ficher de datos `data` consta de 100B de ceros. Creado con las instrucción `dd if=/dev/zero/ of=data bs=1 count=100`.
 Además, crearemos un volumen llamado *volume*: `docker volume create volume_byte`. Dentro del volumen copiaremos el fichero de datos `data`.
 
-<img src="2 - 100B/plot/write_speed/plot0.png" width=300/>
-<img src="2 - 100B/plot/overwrite_speed/plot0.png" width=300/>
-<img src="2 - 100B/plot/read_speed/plot0.png" width=300/>
+<img src="2 - 100B/plot/write_speed/plot0.png" width=500/>
+<img src="2 - 100B/plot/overwrite_speed/plot0.png" width=500/>
+<img src="2 - 100B/plot/read_speed/plot0.png" width=500/>
 
 ## Conclusiones
 
