@@ -71,6 +71,6 @@ Además, crearemos un volumen llamado *volume*: `docker volume create volume_byt
 
 ## Conclusiones
 
-Si trabajamos con ficheros pequeños, es recomendable trabajar con volúmenes o con la capa de entrada salida del contenedor (*thin layer*)
+Si trabajamos con ficheros pequeños, es recomendable trabajar con volúmenes o con la capa de entrada salida del contenedor (*thin layer*).
 
 Si trabajamos con ficheros grandes, a la hora de leer los datos, obtendremos prestaciones ligeramente superiores con *bind mounts*. A la hora de escribir si vamos a crear muchos archivos nuevos será mejor usar volúmenes de datos o trabajar con la *thin layer*. Si vamos a sobreecribir o actualizar el mismo fichero (i.e. una base de datos) la mejor opción será usar un *bind mount*.
