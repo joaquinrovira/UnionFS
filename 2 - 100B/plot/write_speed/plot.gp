@@ -5,10 +5,10 @@ set datafile separator ','
 
 #set grid
 #set key outside
-set title "Docker - write speed"
+set title "Write I/O speed - 100B"
 set ylabel 'Speed (kB/s)'
 
-set xrange [-0.5:5.5]
+set xrange [-0.5:4.5]
 
 set xtic rotate by -30
 
