@@ -5,9 +5,10 @@ set datafile separator ','
 
 #set grid
 #set key outside
+set title "Write I/O speed - 100MB"
 set ylabel 'Velocitad (MB/s)'
 
-set xrange [-0.5:5.5]
+set xrange [-0.5:4.5]
 
 set xtic rotate by -30
 
@@ -22,11 +23,9 @@ plot \
 "data.csv" using 0:2:3:xticlabels(1) with yerrorbars ls 1 notitle,\
 
 
-set output 'plot1.png'
+# set output 'plot1.png'
+# set yrange [0:250]
 
-set yrange [0:250]
-
-plot \
-"data.csv" using 0:2:xtic(1) with boxes notitle ls 2,\
-"data.csv" using 0:2:3:xticlabels(1) with yerrorbars ls 1 notitle,\
-
+# plot \
+# "data.csv" using 0:2:xtic(1) with boxes notitle ls 2,\
+# "data.csv" using 0:2:3:xticlabels(1) with yerrorbars ls 1 notitle,\
