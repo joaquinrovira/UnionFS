@@ -54,6 +54,8 @@ Analizaremos 5 situaciones diferentes:
 - Velocidad en una capa alta (*high layer*). La capa alta se refiere a la capa de lectura just debajo de la capa de entrada-salida del contenedor (`/layers/9`).
 - Velocidad en una capa baja (*low layer*). La capa baja se refiere a una de las primeras capas creadas al contruir la imagen (`/layers/0`).
 
+Podemos encontrar el script del experimento [aquí](<1 - 100MB/test.sh>).
+
 <img src="1 - 100MB/plot/write_speed/plot0.png" width=500/>
 <img src="1 - 100MB/plot/overwrite_speed/plot0.png" width=500/>
 <img src="1 - 100MB/plot/read_speed/plot0.png" width=500/>
@@ -64,6 +66,8 @@ Analizaremos 5 situaciones diferentes:
 
 El ficher de datos `data` consta de 100B de ceros. Creado con las instrucción `dd if=/dev/zero/ of=data bs=1 count=100`.
 Además, crearemos un volumen llamado *volume*: `docker volume create volume_byte`. Dentro del volumen copiaremos el fichero de datos `data`.
+
+Podemos encontrar el script del experimento [aquí](<2 - 100B/test.sh>).
 
 <img src="2 - 100B/plot/write_speed/plot0.png" width=500/>
 <img src="2 - 100B/plot/overwrite_speed/plot0.png" width=500/>
